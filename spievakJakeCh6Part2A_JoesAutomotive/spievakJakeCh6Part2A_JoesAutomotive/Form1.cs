@@ -26,11 +26,6 @@ namespace spievakJakeCh6Part2A_JoesAutomotive
         const int TIRE_ROTATION = 20;
         const int HOURLY_RATE = 20;
 
-        private void mainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private bool ValidateIntInput(string input)
         {
             bool flag = true;
@@ -97,34 +92,6 @@ namespace spievakJakeCh6Part2A_JoesAutomotive
                         {
                             outputListBox.Items.Add("Oil Change" + "\t" + "\t" + "\t" + OIL_CHANGE.ToString("c") + " + " + (.5 * HOURLY_RATE).ToString("c") + "(Labor)"
                                 + "\t" + "0.5 hours");
-                        }
-                        if (CheckBoxChecked(lubeJobCheckBox))
-                        {
-
-                        }
-                        if (CheckBoxChecked(radiatorFlushCheckBox))
-                        {
-
-                        }
-                        if (CheckBoxChecked(trannyFlushCheckBox))
-                        {
-
-                        }
-                        if (CheckBoxChecked(inspectionCheckBox))
-                        {
-
-                        }
-                        if (CheckBoxChecked(mufflerCheckBox))
-                        {
-
-                        }
-                        if (CheckBoxChecked(tireRotationCheckBox))
-                        {
-
-                        }
-                        if (CheckBoxChecked(otherServiceCheckBox))
-                        {
-
                         }
 
                         outputListBox.Items.Add("\n");
